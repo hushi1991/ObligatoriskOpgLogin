@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css"
+          href="../../static/styles.css"
+          th:href="@{styles.css}"/>
+</head>
+<body>
+
+<h1>Users</h1>
+
+
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Options</td>
+    </tr>
+    <tr th:each="user: ${us}">
+        <td th:text="${user.name}"/>
+        <td><a th:href="@{/login(id=${user.user_id})}" class="btn" id="blue">Login</a>
+            <a th:href="@{/details(id=${user.user_id})}" class="btn" id="blue">DETAILS</a>
+            <a th:href="@{/update(id=${user.user_id})}" class="btn" id="">UPDATE</a>
+            <a th:href="@{/delete(id=${user.user_id})}" class="btn" id="red">DELETE</a></td>
+
+    </tr>
+</table>
+
+</body>
+</html>

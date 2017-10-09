@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>User Details</title>
+    <link rel="stylesheet" type="text/css"
+          href="../../static/styles.css"
+          th:href="@{styles.css}"/>
+</head>
+<body>
+<h1>User Details</h1>
+<table>
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Address</td>
+        <td>Email</td>
+
+    </tr>
+    <tr>
+        <td th:text="${us.user_id}"/>
+        <td th:text="${us.name}"/>
+        <td th:text="${us.address}"/>
+        <td th:text="${us.email}"/>
+    </tr>
+</table>
+<a href="/" class="btn" id="blue">RETURN</a>
+
+</body>
+</html>

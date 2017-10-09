@@ -1,0 +1,58 @@
+/*body{
+    font-family: Arial, sans-serif;
+    background-color: cornsilk;
+}*/
+body
+{
+    background: radial-gradient(circle, #FC4A1A 60%, #F7B733 50%);
+}
+
+/* table styles */
+/* https://www.w3schools.com/html/html_tables.asp */
+table {
+    border-collapse: collapse;
+    /* width: 80%;*/
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 5px 8px 5px 8px;
+}
+
+.btn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 5px; /* https://www.w3schools.com/css/css3_borders.asp */
+    box-shadow: 1px 1px 1px #888888;
+    -webkit-transition-duration: 0.1s; /* Safari */
+    transition-duration: 0.1s;
+    margin-bottom: 5px;
+    position: relative;
+    top: 50%;
+
+}
+
+#blue {
+    background-color: blue;
+}
+#red {
+    background-color: red;
+}
+#purple {
+    background-color: #ff31c4;
+}
+h1
+{
+    color: white;
+    font-family: 'Space Mono', monospace;
+    font-size: 100px;
+    height:70px;
+    text-align: center;
+}

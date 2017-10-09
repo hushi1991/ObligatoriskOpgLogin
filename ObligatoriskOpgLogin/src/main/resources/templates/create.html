@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add User to DB</title>
+    <link rel="stylesheet" type="text/css"
+          href="../../static/styles.css"
+          th:href="@{styles.css}"/>
+</head>
+<body>
+<h1>Add Movie to DB</h1>
+
+<form action="/create" th:action="@{/create}" method="post" th:object="${user}">
+
+    <input type="text" th:field="*{name}" placeholder="Name" />
+    <input type="text" th:field="*{address}" placeholder="Address" />
+    <input type="text" th:field="*{email}" placeholder="Email" />
+    <input type="text" th:field="*{password}" placeholder="Password" />
+
+
+    <input type="submit" value="Send" />
+
+</form>
+
+</body>
+</html>

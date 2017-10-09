@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css"
+          href="../../static/styles.css"
+          th:href="@{styles.css}"/>
+</head>
+<body>
+<h1>Login</h1>
+
+<form th:action="@{/login}" method="post" th:object="${us}"> <!-- movie = @ModelAttribute -->
+    <input type="text" th:field="*{user_id}" th:text="${user_id}" readonly="readonly" />
+    <input type="text" th:field="*{name}" readonly="readonly" />
+    <input type="password" th:field="*{password}" placeholder="Password" />
+
+
+    <input type="submit" value="Login" />
+
+
+</form>
+
+</body>
+</html>

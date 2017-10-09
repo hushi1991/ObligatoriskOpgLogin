@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Update Password</title>
+    <link rel="stylesheet" type="text/css"
+          href="../../static/styles.css"
+          th:href="@{styles.css}"/>
+</head>
+<body>
+<h1>Update Password</h1>
+
+<form th:action="@{/update}" method="post" th:object="${us}"> <!-- movie = @ModelAttribute -->
+    <input type="text" th:field="*{user_id}" th:text="${user_id}" readonly="readonly" />
+    <input type="text" th:field="*{name}" readonly="readonly" />
+    <input type="text" th:field="*{address}" readonly="readonly" />
+    <input type="text" th:field="*{email}" readonly="readonly" />
+    <input type="password" th:field="*{password}" placeholder="Old Password"/>
+    <input type="password" th:field="*{password1}" placeholder="New Password" />
+    <input type="password" th:field="*{password2}" placeholder="New Password" />
+
+    <input type="submit" value="Update password" />
+
+</form>
+
+</body>
+</html>
